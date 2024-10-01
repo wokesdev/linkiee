@@ -5,7 +5,7 @@
     --bgColor2: #090a0f;
     --accentColor: #FFF;
     --font: 'Karla', sans-serif;
-    --delay: .3s;
+    --delay: .1s;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
     /* background-image: url('https://bit.ly/3nFVqJh'); */
     opacity: 0;
     /* duration/timing-function/delay/iterations/name */
-    animation: 1s ease-out var(--delay) 1 transitionAnimation;
+    animation: 0.3s ease-out var(--delay) 1 transitionAnimation;
     animation-fill-mode: forwards;
     background-repeat: no-repeat;
     background-size: cover;
