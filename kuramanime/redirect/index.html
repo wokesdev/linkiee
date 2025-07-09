@@ -6,7 +6,7 @@
     const path = url.pathname;
     const queryString = url.search;
 
-    if (window.location.href.includes('/anime/')) {
+    if (window.location.href.includes('anime/')) {
         setTimeout(() => {
             window.location.replace(`https://kuramalink.my.id/${queryString.replace('?path=')}`);
         }, 1000);
