@@ -6,11 +6,14 @@
     const path = url.pathname;
     const queryString = url.search;
 
+    console.log(url)
+    console.log(path)
+    console.log(queryString)
+
     if (window.location.href.includes('anime/')) {
         setTimeout(() => {
             window.location.replace(`https://kuramalink.my.id/${queryString.replace('?path=')}`);
         }, 1000);
-        return;
     } else {
         window.location.replace('https://shortku.in/kuramanime');
     }
