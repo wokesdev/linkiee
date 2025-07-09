@@ -5,6 +5,7 @@
     const url = new URL(window.location.href.replace('/kuramanime/redirect', ''));
     const path = url.pathname;
     const queryString = url.search;
+    const newPath = queryString.replace('?path=', '');
 
     console.log(url)
     console.log(path)
@@ -12,7 +13,7 @@
 
     if (window.location.href.includes('anime/')) {
         setTimeout(() => {
-            window.location.replace(`https://kuramalink.my.id/${queryString.replace('?path=')}`);
+            window.location.replace(`https://kuramalink.my.id/${newPath}`);
         }, 1000);
     } else {
         window.location.replace('https://shortku.in/kuramanime');
