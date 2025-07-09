@@ -8,7 +8,7 @@
 
     if (window.location.href.includes('/anime/')) {
         setTimeout(() => {
-            window.location.replace(`https://kuramalink.my.id${path}${queryString}`);
+            window.location.replace(`https://kuramalink.my.id/${queryString.replace('?path=')}`);
         }, 1000);
         return;
     } else {
