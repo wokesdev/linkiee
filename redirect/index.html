@@ -2,16 +2,16 @@
     Sedang mengalihkan ke halaman Kuramanime...    
 </body>
 <script>
-    const url = new URL(window.location.href.replace('/redirect', ''));
+    const url = new URL(window.location.href.replace('/kuramanime/redirect', ''));
     const path = url.pathname;
     const queryString = url.search;
 
-    if (url.includes('/anime/')) {
+    if (window.location.href.includes('/anime/')) {
         setTimeout(() => {
             window.location.replace(`https://kuramalink.my.id${path}${queryString}`);
         }, 1000);
         return;
+    } else {
+        window.location.replace('https://shortku.in/kuramanime');
     }
-
-    window.location.replace('https://shortku.in/kuramanime');
 </script>
