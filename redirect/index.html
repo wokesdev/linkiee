@@ -6,9 +6,12 @@
     const path = url.pathname;
     const queryString = url.search;
 
-    setTimeout(() => {
-        window.location.replace(`https://kuramalink.my.id${path}${queryString}`);
-    }, 1000);
+    if (url.includes('/anime/')) {
+        setTimeout(() => {
+            window.location.replace(`https://kuramalink.my.id${path}${queryString}`);
+        }, 1000);
+        return;
+    }
 
     window.location.replace('https://shortku.in/kuramanime');
 </script>
